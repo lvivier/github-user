@@ -2,8 +2,9 @@
   "name": "github-user",
   "repo": "lvivier/github-user",
   "version": "0.0.1",
+  "license": "MIT",
+  "scripts": ["index.js"],
   "dependencies": {
     "learnboost/jsonp": "*"
-  },
-  "scripts": ["index.js"]
+  }
 }
