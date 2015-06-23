@@ -5,7 +5,7 @@
 
 var jsonp = require('jsonp')
 
-exports = module.exports = function (str, cb) {
+module.exports = function (str, cb) {
   (str.match(/[^@]+@[\w.-]+/)? email : profile)(str, cb)
 }
 
