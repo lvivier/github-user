@@ -1,9 +1,13 @@
 
 # github-user
 
-Get a GitHub user profile by name or email. Goes with [LearnBoost/gravatar-component](https://github.com/LearnBoost/gravatar-component).
+Get a GitHub user profile by email or name. Goes with [LearnBoost/gravatar-component](https://github.com/LearnBoost/gravatar-component).
 
 ## Installation
+
+```
+$ npm install lvivier/github-user
+```
 
 ```
 $ component install lvivier/github-user
@@ -11,19 +15,15 @@ $ component install lvivier/github-user
 
 ## API
 
-### .email(email, cb)
+### fn(email|name, cb)
 
-Get a profile by email.
-
-### .profile(name, cb)
-
-Get a profile by name.
+Get a profile by email or name. `cb(err, profile)` or null if nothing found.
 
 ## License
 
 (The MIT License)
 
-Copyright (c) 2014 Luke Vivier <luke@vivier.ca>
+Copyright (c) 2015 Luke Vivier <luke@vivier.ca>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

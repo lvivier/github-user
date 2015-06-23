@@ -1,0 +1,21 @@
+{
+  "name": "github-user",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lvivier/github-user.git"
+  },
+  "description": "Get a GitHub user profile by name or email.",
+  "author": "Luke Vivier <luke@vivier.ca>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mochify --ui qunit"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "jsonp": "^0.2.0"
+  },
+  "devDependencies": {
+    "mochify": "^2.9.0"
+  }
+}

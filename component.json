@@ -5,6 +5,6 @@
   "license": "MIT",
   "scripts": ["index.js"],
   "dependencies": {
-    "learnboost/jsonp": "*"
+    "learnboost/jsonp": "0.2.0"
   }
 }

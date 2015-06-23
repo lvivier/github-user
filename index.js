@@ -2,14 +2,17 @@
 /**
  * Dependencies
  */
+
 var jsonp = require('jsonp')
 
-exports.email = email
-exports.profile = profile
+exports = module.exports = function (str, cb) {
+  (str.match(/[^@]+@[\w.-]+/)? email : profile)(str, cb)
+}
 
 /**
  * GitHub user by email
  */
+
 function email (email, cb) {
   var url = 'https://api.github.com/search/users?q='+email+' in:email'
   jsonp(url, function (err, res) {
@@ -22,6 +25,7 @@ function email (email, cb) {
 /**
  * GitHub user profile
  */
+
 function profile (name, cb) {
   var url = 'https://api.github.com/users/'+name
   jsonp(url, function (err, res) {
